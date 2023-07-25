@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/CSS">
+	th, td{
+		border : 1px solid black;
+		padding : 30px 15px;
+		text-align: center;
+	}
+	th{
+		background-color: deepskyblue;
+		color: white;
+	}
+	td:nth-child(1){
+		text-align: left;
+	}
+	tr:nth-child(2){
+		background-color: greenyellow;
+	}
+	tr:nth-child(3){
+		background-color: lime;
+	}
+	tr:nth-child(4){
+		background-color: springgreen;
+	}
+	tr:nth-child(5){
+		background-color: mediumspringgreen;
+	}
+	tr:nth-child(6){
+		background-color: orange;
+	}
+	tr:nth-child(7){
+		background-color: lightgreen;
+	}
+	tr:nth-child(8){
+		background-color: palegreen;
+	}
+	tr:nth-child(9){
+		background-color: pink;
+	}
+	tr:nth-child(10){
+		background-color: lightyellow;
+	}
+	tr:nth-child(11){
+		background-color: lightgoldenrodyellow;
+	}
+	tr:nth-child(12){
+		background-color: yellow;
+	}
+	tr:nth-child(13){
+		background-color: skyblue;
+	}
+	table{
+		border-collapse: collapse;
+		margin : auto;
+		margin-top : 60px;
+	}
+	
+</style>
+</head>
+<body>
+	<h3>table 태그에 스타일 설정해보기</h3>
+	<table>
+		<tr>
+			<th>번호</th>
+			<th style="width:200px;">주요개념</th>
+			<th style="width:400px;">설명</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>HTML 문서</td>
+			<td>-모든 HTML 문서는 문서 유형 선언으로 시작해야 합니다 (!DOCTYPE html).
+			-HTML 문서 자체는 로 시작하고 (html)로 끝납니다 (/html).
+			-HTML 문서의 보이는 부분은 (body)~ 사이입니다 (/body).
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>HTML 속성</td>
+			<td>-모든 HTML 요소는 속성을 가질 수 있습니다.
+				-속성은 요소에 대한 추가 정보를 제공합니다.
+				-속성은 항상 시작 태그 에 지정됩니다.
+				-속성은 일반적으로 name="value" 와 같은 이름/값 쌍으로 제공됩니다.</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>HTML 제목</td>
+			<td>-(h1)HTML 제목은 to 태그 로 정의됩니다 (h6).
+				-(h1)가장 중요한 제목을 정의합니다. (h6)가장 덜 중요한 표제를 정의합니다.</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>HTML 단락</td>
+			<td>-HTML (p)요소는 단락을 정의합니다.
+				-단락은 항상 새 줄에서 시작하며 브라우저는 자동으로 단락 앞과 뒤에 약간의 공백(여백)을 추가합니다.</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>HTML 스타일</td>
+			<td>HTML style속성은 색상, 글꼴, 크기 등과 같은 요소에 스타일을 추가하는 데 사용됩니다.</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>HTML 텍스트 서식</td>
+			<td>서식 지정 요소는 특수 유형의 텍스트를 표시하도록 설계되었습니다.
+				(1) <b>- 굵은 텍스트
+				(2) <strong>- 중요 텍스트
+				(3) <i>- 기울임꼴 텍스트
+				(4) <em>- 강조된 텍스트
+				(5) <mark>- 표시된 텍스트
+				(6) <small>- 더 작은 텍스트
+				(7) <del>- 삭제된 텍스트
+				(8) <ins>- 삽입된 텍스트
+				(9) <sub>- 아래 첨자 텍스트
+				(10) <sup>- 위첨자 텍스트</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>HTML 색상</td>
+			<td>HTML 색상은 미리 정의된 색상 이름 또는 RGB, HEX, HSL, RGBA 또는 HSLA 값으로 지정됩니다.</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>HTML 스타일 - CSS</td>
+			<td>-CSS는 Cascading Style Sheets의 약자입니다.
+				-CSS는 많은 작업을 저장합니다.
+				-한 번에 여러 웹 페이지의 레이아웃을 제어할 수 있습니다.</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>HTML 링크</td>
+			<td>-링크는 거의 모든 웹 페이지에서 찾을 수 있습니다.
+				-링크를 사용하면 사용자가 페이지에서 페이지로 이동할 수 있습니다.
+			</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>HTML 테이블</td>
+			<td>HTML의 테이블은 행과 열 내부의 테이블 셀로 구성됩니다.</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>블록 수준 요소</td>
+			<td>-블록 수준 요소는 항상 새 줄에서 시작하며 브라우저는 요소 앞과 뒤에 자동으로 약간의 공간(여백)을 추가합니다.
+				-블록 수준 요소는 항상 사용 가능한 전체 너비를 차지합니다(가능한 한 왼쪽과 오른쪽으로 확장됨).
+				-일반적으로 사용되는 두 가지 블록 요소는 (p) 및 (div)입니다.
+				-요소 (p)는 HTML 문서의 단락을 정의합니다.
+				-요소 (div)는 HTML 문서의 구분 또는 섹션을 정의합니다.</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>인라인 요소</td>
+			<td>-인라인 요소는 새 줄에서 시작하지 않습니다.
+				-인라인 요소는 필요한 만큼의 너비만 차지합니다.
+				-단락 내부의 (span) 요소 입니다.
+			</td>
+		</tr>
+		
+	</table>
+</body>
+</html>
