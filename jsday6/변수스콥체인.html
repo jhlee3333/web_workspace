@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>오류 연습 : LightOnOff</title>
+<!-- 이 위치의 script 명령들은 body의 태그 요소들이 배치되기 전에 실행됩니다. -->
+<script type="text/javascript">
+//전역변수
+//	const light = document.getElementById('light')    //img 태그
+//	const state = document.getElementById('state')    //span 태그
+	
+	//script 태그가 head 안에 있을 때에는 위와 같이 요소를 가져올 수 없어서 오류 발생
+	function lightToggle(){
+		//함수 스콥(함수 지역변수)이지만 특이하게 이 함수 안에서 호출되는 lightOn, lightOff 함수
+		//에서는 아래 지역변수 2개를 사용할 수 있습니다.(scope chain)
+	    const light = document.getElementById('light')    //img 태그
+		const state = document.getElementById('state')    //span 태그
+		
+		//현재 상태를 알 수 있는 변수 대신에 state.innerHTML 값을 검사해서
+		//'OFF'이면 lightOn(), 'ON'이면 lightOff() 실행하기
+		if(state.innerHTML=='ON')
+		   lightOff()
+		else
+		   lightOn()
+	}
+	
+	function lightOn(){
+		//이미지 바꾸기, 글꼴 색상 'green' 바꾸기, 텍스트 "ON" 변경하기
+		light.src = '../image/pic_bulbon.gif'
+		state.innerHTML = 'ON'
+		state.style.color = 'green'
+	}
+	
+	function lightOff(){
+		//이미지 바꾸기, 글꼴 색상 'red'로 바꾸기, 텍스트 "OFF" 변경하기
+		light.src = '../image/pic_bulboff.gif'
+		state.innerHTML = 'OFF'
+		state.style.color = 'red'
+	}
+</script>
+</head>
+</body>
+</html>
