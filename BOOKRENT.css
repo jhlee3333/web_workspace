@@ -1,0 +1,58 @@
+@charset "UTF-8";
+html, body {
+	margin : 0;
+}
+
+ul {
+	background-color: brown;
+	margin : 0;
+	overflow: hidden;
+}
+
+nav {
+	padding : 30px;
+	font-size: 120%;
+	margin : 20px;
+	display: 1920 X 1080;
+}
+
+nav a {
+	color: white;
+	display: inline-block;
+	padding : 20px;
+	float: left;
+}
+
+nav li {
+	float: right;
+	margin : 20px;
+}
+
+main {
+	min-width : 700px;
+	padding : 20px;
+	background-color: lightblue;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+table {
+	height: 700px;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	background-color: dodgerblue;
+	color: white;
+	font-size : 120%;
+}
+
+text {
+	size : 15px;
+}
+
+button {
+	background-color: white;
+	color: black;
+}
