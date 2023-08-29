@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mproduct">
+	
+	
+	
+	<select id="list" resultType="teamD.project.dto.MproductDto">
+		select *
+		from Mproduct
+	</select>
+	
+	
+ 	<select id="recentlist" resultType="teamD.project.dto.MproductDto">
+		SELECT pname,id,price,createAt,psize,picture 
+		FROM MPRODUCT 
+		ORDER BY CREATEAT DESC
+	</select>
+	
+	
+	<select id="mostlist" resultType="teamD.project.dto.MproductDto">
+		SELECT pname,id,price,createAt,psize,picture
+		FROM MPRODUCT
+		ORDER BY READCOUNT DESC
+	</select>
+	
+	
+	<select id="pnamelist" resultType="teamD.project.dto.MproductDto" parameterType="String">
+		SELECT pname,id,price,createAt,psize,picutre 
+		FROM MPRODUCT 
+		WHERE pname = #{pname}
+	</select>
+	
+	<insert id="insert"  parameterType="teamD.project.dto.MproductDto">
+  			insert into MPRODUCT
+  			values (#{pname},mproduct_pcode_seq.nextval,null,#{price},#{brand},#{psize},#{category},null,sysdate,#{picture})
+  		</insert>
+	
+	<!-- <select id="most" resultType="teamD.project.dto.MproductDto">
+		SELECT pname,id,price,createAt,psize 
+		FROM MPRODUCT m 
+		ORDER BY READCOUNT DESC;
+	</select>
+	
+	
+	<select id="most" resultType="teamD.project.dto.MproductDto">
+		SELECT pname,id,price,createAt,psize 
+		FROM MPRODUCT m 
+		ORDER BY READCOUNT DESC;
+	</select> -->
+
+</mapper>
+
