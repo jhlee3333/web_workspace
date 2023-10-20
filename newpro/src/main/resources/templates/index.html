@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">    <!-- tymleleaf 사용 -->
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<hr>
+<h2>주문 시작</h2>
+<hr>
+<a href="/order/new">주문</a>         <!-- 주문 페이지로 이동할 수 있게 a href에 html를 집어넣어 연결시킨다. -->
+<a href="/order/confirm">주문 확인</a>
+<a href="/order/test?email=aaa@naver.com&pcode=abc123&count=3">주문 테스트1</a> <!-- 쿼리 매개변수(email, pcode, count) 전달 -->
+<a href="/order/test?count=3">주문 테스트2</a> <!-- count 쿼리 매개변수를 전달 -->
+<a href="/order/test">주문 테스트3</a> <!-- 쿼리 매개변수를 전달하지 않음 -->
+</body>
+</html>
